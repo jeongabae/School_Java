@@ -3,7 +3,6 @@ package Practice4_05;
 
 public class Calculator {
     int n1,n2; //숫자 1, 숫자 2
-    String op; //연산자
 
     public Calculator(int n1, int n2) { //생성자
         this.n1 = n1;

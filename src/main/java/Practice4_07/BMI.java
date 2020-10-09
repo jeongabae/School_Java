@@ -1,5 +1,6 @@
 package Practice4_07;
-/** BMI class
+/**
+ * BMI class
  * Note : 2020253059 JeonGaBae
  */
 public class BMI {
@@ -8,11 +9,12 @@ public class BMI {
     private double weight,height; //user weight, height
     private String interpretation; //user interpretation
 
-    /** Constructor
-     * @param name
-     * @param age
-     * @param weight
-     * @param height
+    /**
+     * Constructor
+     * @param name name type is String
+     * @param age age type is int
+     * @param weight weight type is double
+     * @param height height type is double
      */
     public BMI(String name, int age, double weight, double height) {
         this.name = name;
@@ -21,7 +23,8 @@ public class BMI {
         this.height = height;
     }
 
-    /** getBMI method
+    /**
+     * getBMI method
      * Note : reads the user's bmi value
      * @return weight /(height * height)
      */
@@ -30,7 +33,8 @@ public class BMI {
         return  weight /(height * height); //Formula for BMI
     }
 
-    /** getInterpretation method
+    /**
+     * getInterpretation method
      * Note : reads the user's interpretation
      * @param bmi
      * @return user's interpretation
@@ -47,7 +51,8 @@ public class BMI {
         }
     }
 
-    /** setWeight
+    /**
+     * setWeight
      * Note : Change the weight of a field
      * @param weight
      */
@@ -55,7 +60,8 @@ public class BMI {
         this.weight = weight;
     }
 
-    /** setHeight
+    /**
+     * setHeight
      * Note : Change the Height of a field
      * @param height
      */

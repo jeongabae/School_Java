@@ -1,7 +1,8 @@
 
 package Practice4_05;
 
-/** Calculator class
+/**
+ * Calculator class
  * Note : 2020253059 JeonGaBae
  */
 public class Calculator {
@@ -9,9 +10,8 @@ public class Calculator {
 
     /**
      * Constructor
-     *
-     * @param n1
-     * @param n2
+     * @param n1 : number type is integer
+     * @param n2 : number type is integer
      */
     public Calculator(int n1, int n2) {
         this.n1 = n1;
@@ -20,7 +20,6 @@ public class Calculator {
 
     /**
      * add method
-     *
      * @return n1+n2;
      */
     int add() {
@@ -29,7 +28,6 @@ public class Calculator {
 
     /**
      * subtract method
-     *
      * @return n1-n2;
      */
     int subtract() {
@@ -38,7 +36,6 @@ public class Calculator {
 
     /**
      * multiply method
-     *
      * @return n1*n2;
      */
     int multiply() {
@@ -47,7 +44,6 @@ public class Calculator {
 
     /**
      * divide method
-     *
      * @return n1/n2;
      */
     double divide() {
@@ -56,7 +52,6 @@ public class Calculator {
 
     /**
      * rest method
-     *
      * @return n1%n2;
      */
     double rest() {

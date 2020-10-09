@@ -14,7 +14,10 @@ public class TestCalculator {
         int n2 = scanner.nextInt(); //input n2
         Calculator calculator = new Calculator(n1,n2); //Create calculator object
 
-        switch (op) { // Switch statement for different calculations depending on operator
+        /**
+         * Switch statement for different calculations depending on operator
+         */
+        switch (op) {
             case "+": //add
                 System.out.println("Result: "+calculator.add());
                 break;

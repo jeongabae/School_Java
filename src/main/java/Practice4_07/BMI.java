@@ -59,5 +59,6 @@ public class BMI {
      * @param height
      */
     public void setHeight(double height) {
+        this.height = height;
     }
 }

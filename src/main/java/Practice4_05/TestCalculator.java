@@ -1,38 +1,40 @@
-/*2020253059 전가배*/
-/*숫자1 연산자 숫자2를 입력받아 계산을 해주는 계산기프로그램*/
 package Practice4_05;
-import java.util.Scanner; //Scanner 클래스를 사용하기 위해 추가
+import java.util.Scanner; //To use Scanner class
 
+/** TestCalculator class
+ * Note : 2020253059 JeonGaBae
+ * Note : Calculator program to calculate by inputting number 1 operator number 2
+ */
 public class TestCalculator {
     public static void main(String[]args) {
-        Scanner scanner = new Scanner(System.in);   //Scanner 클래스를 사용하기 위해 추가
-        System.out.print("Enter: number1 OperationalSymbol(+, -, x, / , %) number2: "); //숫자1 연산자 숫자2 입력 안내문 출력
-        int n1 = scanner.nextInt(); //숫자1 입력
-        String op = scanner.next(); //연산자 입력
-        int n2 = scanner.nextInt(); //숫자2입력
-        Calculator calculator = new Calculator(n1,n2); //계산기 객체 생성
+        Scanner scanner = new Scanner(System.in);   //Create object of Scanner class
+        System.out.print("Enter: number1 OperationalSymbol(+, -, x, / , %) number2: "); //input guide
+        int n1 = scanner.nextInt(); //input n1
+        String op = scanner.next(); //input operator
+        int n2 = scanner.nextInt(); //input n2
+        Calculator calculator = new Calculator(n1,n2); //Create calculator object
 
-        switch (op) { // 연산자에 따라 계산을 달리하기 위한 switch문
-            case "+": //더하기
+        switch (op) { // Switch statement for different calculations depending on operator
+            case "+": //add
                 System.out.println("Result: "+calculator.add());
                 break;
 
-            case "-": //빼기
+            case "-": //subtract
                 System.out.println("Result: "+calculator.subtract());
                 break;
 
-            case "*": //곱하기
+            case "*": //multiply
                 System.out.println("Result: "+calculator.multiply());
                 break;
 
-            case "/": //나누기
+            case "/": //divide
                 System.out.println("Result: "+calculator.divide());
                 break;
 
-            case "%": //나머지
+            case "%": //rest
                 System.out.println("Result: "+calculator.rest());
                 break;
-            default: //그 외 값 입력 시 잘못된 입력
+            default: //etc
                 System.out.println("Wrong Input");
         }
     }

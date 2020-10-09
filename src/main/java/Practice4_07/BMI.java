@@ -4,11 +4,10 @@ package Practice4_07;
 public class BMI {
     private String name; //user name
     private int age; //user age
-    private double weight,height; //사용자 몸무게, 키
-    private String interpretation; //사용자 상태
+    private double weight,height; //user weight, height
+    private String interpretation; //user interpretation
 
     /** Constructor
-     *
      * @param name
      * @param age
      * @param weight
@@ -21,35 +20,44 @@ public class BMI {
         this.height = height;
     }
 
-    public double getBMI(){ //사용자의 bmi 값을 읽는 메서드
-        height = height/100; //height를 cm단위로 나타내기 위한 수식
-        return  weight /(height * height); //BMI의 수식
+    /** getBMI method
+     * Note : reads the user's bmi value
+     * @return weight /(height * height)
+     */
+    public double getBMI(){
+        height = height/100; //Formula for indicating height in cm
+        return  weight /(height * height); //Formula for BMI
     }
 
-    public String getInterpretation(double bmi){ //사용자의 상태 값을 읽는 메서드
-        if(bmi<18.5){                      //bmi값이 18.5미만일 경우 저체중
+    /** getInterpretation method
+     * Note : reads the user's interpretation
+     * @param bmi
+     * @return user's interpretation
+     */
+    public String getInterpretation(double bmi){
+        if(bmi<18.5){                      //Underweight if bmi value is less than 18.5
             return "Underweight";
-        }else if (18.5<=bmi && bmi<25.0){  //bmi값이 18.5이상, 25.0 미만일 경우 정상
+        }else if (18.5<=bmi && bmi<25.0){  //Normal if the bmi value is 18.5 or higher and less than 25.0
             return "Normal";
-        } else if(25.0<=bmi && bmi<30.0){  //bmi값이 25.0이상, 30.0 미만일 경우 과체중
+        } else if(25.0<=bmi && bmi<30.0){  //Overweight if bmi value is 25.0 or higher or less than 30.0
             return "Overweight";
-        } else{                            //bmi값이 30.0이상일 경우 비만
+        } else{                            //Obesity if bmi value is over 30.0
             return "Obese";
         }
     }
 
-    public void setName(String name) {//필드 중 name 변경
-        this.name = name;
-    }
-
-    public void setAge(int age) { //필드 중 age 변경
-        this.age = age;
-    }
-
-    public void setWeight(double weight) { //필드 중 weight 변경
+    /** setWeight
+     * Note : Change the weight of a field
+     * @param weight
+     */
+    public void setWeight(double weight) {
         this.weight = weight;
     }
 
+    /** setHeight
+     * Note : Change the Height of a field
+     * @param height
+     */
     public void setHeight(double height) { //필드 중 bmi 변경
         this.height = height;
     }

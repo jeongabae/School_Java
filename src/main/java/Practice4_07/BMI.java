@@ -1,6 +1,7 @@
 package Practice4_07;
-/*2020253059 전가배*/
-
+/** BMI class
+ * Note : 2020253059 JeonGaBae
+ */
 public class BMI {
     private String name; //user name
     private int age; //user age

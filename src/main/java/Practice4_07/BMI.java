@@ -58,7 +58,6 @@ public class BMI {
      * Note : Change the Height of a field
      * @param height
      */
-    public void setHeight(double height) { //필드 중 bmi 변경
-        this.height = height;
+    public void setHeight(double height) {
     }
 }

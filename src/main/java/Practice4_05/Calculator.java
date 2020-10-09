@@ -10,9 +10,9 @@ public class Calculator {
         this.n2 = n2;
     }
 
-    int add(int n1, int n2){return n1+n2;} //더하기 계산 메서드
-    int subtract(int n1, int n2){return n1-n2;} //빼기 계산 메서드
-    int multiply(int n1, int n2){return n1*n2;} //곱하기 계산 메서드
-    double divide(int n1, int n2){return (double)n1/n2;} //나누기 계산 메서드
-    double rest(int n1, int n2){return (double)n1%n2;} //나머지 계산 메서드
+    int add(){return n1+n2;} //더하기 계산 메서드
+    int subtract(){return n1-n2;} //빼기 계산 메서드
+    int multiply(){return n1*n2;} //곱하기 계산 메서드
+    double divide(){return (double)n1/n2;} //나누기 계산 메서드
+    double rest(){return (double)n1%n2;} //나머지 계산 메서드
 }

@@ -14,25 +14,25 @@ public class TestCalculator {
 
         switch (op) { // 연산자에 따라 계산을 달리하기 위한 switch문
             case "+": //더하기
-                System.out.println("Result: "+calculator.add(n1, n2));
+                System.out.println("Result: "+calculator.add());
                 break;
 
             case "-": //빼기
-                System.out.println("Result: "+calculator.subtract(n1, n2));
+                System.out.println("Result: "+calculator.subtract());
                 break;
 
             case "*": //곱하기
-                System.out.println("Result: "+calculator.multiply(n1, n2));
+                System.out.println("Result: "+calculator.multiply());
                 break;
 
             case "/": //나누기
-                System.out.println("Result: "+calculator.divide(n1, n2));
+                System.out.println("Result: "+calculator.divide());
                 break;
 
             case "%": //나머지
-                System.out.println("Result: "+calculator.rest(n1, n2));
+                System.out.println("Result: "+calculator.rest());
                 break;
-            default:
+            default: //그 외 값 입력 시 잘못된 입력
                 System.out.println("Wrong Input");
         }
     }

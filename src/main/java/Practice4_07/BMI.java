@@ -7,7 +7,6 @@ public class BMI {
     private String name; //user name
     private int age; //user age
     private double weight,height; //user weight, height
-    private String interpretation; //user interpretation
 
     /**
      * Constructor

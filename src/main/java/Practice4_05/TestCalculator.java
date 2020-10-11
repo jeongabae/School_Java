@@ -1,7 +1,8 @@
 package Practice4_05;
 import java.util.Scanner; //To use Scanner class
 
-/** TestCalculator class
+/**
+ *  TestCalculator class
  * Note : 2020253059 JeonGaBae
  * Note : Calculator program to calculate by inputting number 1 operator number 2
  */

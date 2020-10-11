@@ -20,7 +20,7 @@ public class BMImain {
 
         System.out.println("User1 BMI: "+bmi1.getBMI()); //Print user1's BMI index
         System.out.println("User1 Interpretation: "+bmi1.getInterpretation(bmi1.getBMI()));    //Print user1's interpretation
-        System.out.println("User1 BMI: "+bmi2.getBMI());  //Print user2's BMI index
-        System.out.println("User1 Interpretation: "+bmi2.getInterpretation(bmi1.getBMI()));    //Print user2's interpretation
+        System.out.println("User2 BMI: "+bmi2.getBMI());  //Print user2's BMI index
+        System.out.println("User2 Interpretation: "+bmi2.getInterpretation(bmi1.getBMI()));    //Print user2's interpretation
     }
 }

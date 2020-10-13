@@ -20,6 +20,7 @@ public class Calculator {
 
     /**
      * add method
+     * Note : Perform Plus Calculation
      * @return n1+n2;
      */
     int add() {
@@ -28,6 +29,7 @@ public class Calculator {
 
     /**
      * subtract method
+     * Note : Perform subtract Calculation
      * @return n1-n2;
      */
     int subtract() {
@@ -36,6 +38,7 @@ public class Calculator {
 
     /**
      * multiply method
+     * Note : Perform multiply Calculation
      * @return n1*n2;
      */
     int multiply() {
@@ -44,6 +47,7 @@ public class Calculator {
 
     /**
      * divide method
+     * Note : Perform divide Calculation
      * @return n1/n2;
      */
     double divide() {
@@ -52,6 +56,7 @@ public class Calculator {
 
     /**
      * rest method
+     * Note : Perform rest Calculation
      * @return n1%n2;
      */
     double rest() {

@@ -9,7 +9,7 @@ import java.util.Scanner; //To use Scanner class
 public class TestCalculator {
     public static void main(String[]args) {
         Scanner scanner = new Scanner(System.in);   //Create object of Scanner class
-        System.out.print("Enter: number1 OperationalSymbol(+, -, x, / , %) number2: "); //input guide
+        System.out.print("Enter: number1 OperationalSymbol(+, -, *, / , %) number2: "); //input guide
         int n1 = scanner.nextInt(); //input n1
         String op = scanner.next(); //input operator
         int n2 = scanner.nextInt(); //input n2
@@ -41,5 +41,6 @@ public class TestCalculator {
             default: //etc
                 System.out.println("Wrong Input");
         }
+        scanner.close();
     }
 }
